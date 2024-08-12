@@ -6,7 +6,7 @@ import { GrGithub, GrGoogle } from "react-icons/gr";
 export default async function Page() {
   const session = await auth();
 
-  if (!session || !session?.user) {
+  if (session?.user) {
     redirect("/");
   }
 
