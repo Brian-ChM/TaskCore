@@ -69,7 +69,7 @@ export const TaskCard = ({
           {title}
         </h3>
         <p className="text-muted-foreground text-sm">
-          {descripcion.slice(0, 85) + (descripcion.length > 85 ? "..." : "")}
+          {descripcion.slice(0, 85) + (descripcion.length > 80 ? "..." : "")}
         </p>
       </div>
 
