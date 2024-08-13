@@ -68,8 +68,8 @@ export const TaskCard = ({
         <h3 className="text-xl font-semibold text-nowrap max-w-[85%] overflow-hidden">
           {title}
         </h3>
-        <p className="text-muted-foreground text-sm">
-          {descripcion.slice(0, 80) + (descripcion.length > 80 ? "..." : "")}
+        <p className="text-muted-foreground text-sm break-words">
+          {descripcion.slice(0, 75) + (descripcion.length > 75 ? "..." : "")}
         </p>
       </div>
 
